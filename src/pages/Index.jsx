@@ -1,14 +1,19 @@
-// Update this page (the content is just a fallback if you fail and example)
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
     <div className="h-screen w-screen flex items-center justify-center">
-      {/* Update with components here - default to put new layout sections as separate components in the components folder, and import them here */}
       <div>
-        <h1 className="text-3xl text-center">Your Blank Canvas</h1>
+        <h1 className="text-3xl text-center">Sunday School Attendance System</h1>
         <p className="text-center">
-          Chat with the agent to start making edits.
+          Welcome to the Sunday School Attendance System. Please navigate using the links below.
         </p>
+        <div className="flex justify-center space-x-4 mt-4">
+          <Link to="/login" className="text-blue-500">Login</Link>
+          <Link to="/teacher-dashboard" className="text-blue-500">Teacher Dashboard</Link>
+          <Link to="/admin-dashboard" className="text-blue-500">Admin Dashboard</Link>
+        </div>
       </div>
     </div>
   );
